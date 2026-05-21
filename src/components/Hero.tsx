@@ -1,0 +1,101 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+export function Hero() {
+  return (
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-slate-950">
+      {/* Subtle grid + gradient background — engineering tone, no photo */}
+      <div className="absolute inset-0">
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(56,189,248,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,0.5) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950/30" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-24 relative z-10 w-full">
+        <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 text-sky-300 text-xs font-heading font-semibold tracking-wider uppercase border border-sky-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+              FCC RF Compliance &middot; Nationwide
+            </span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-[1.05]"
+          >
+            Independent RF compliance studies for{" "}
+            <span className="text-sky-400">cell sites you can trust</span>
+            .
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl"
+          >
+            OSC Engineering helps building owners, school districts, jurisdictions,
+            and wireless operators meet FCC RF exposure limits — with on-site testing,
+            expert review, and worker safety training grounded in 47 CFR §&nbsp;1.1310
+            and FCC OET Bulletin 65.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-10 flex flex-wrap items-center gap-4"
+          >
+            <Link
+              href="/contact"
+              className="px-8 py-4 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors flex items-center gap-3 text-lg shadow-lg shadow-sky-500/25"
+            >
+              Request a Site Assessment
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            <a
+              href="tel:858-436-4120"
+              className="px-8 py-4 bg-white/10 text-white font-heading font-medium rounded-lg hover:bg-white/20 transition-colors border border-white/20"
+            >
+              (858) 436-4120
+            </a>
+          </motion.div>
+
+          {/* Trust line */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400"
+          >
+            <span>FCC OET 65 &amp; 47 CFR § 1.1310</span>
+            <span className="w-px h-4 bg-slate-600 hidden sm:block" />
+            <span>OSHA &amp; ANSI/IEEE C95.1 trained</span>
+            <span className="w-px h-4 bg-slate-600 hidden sm:block" />
+            <span>Independent &amp; carrier-neutral</span>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
