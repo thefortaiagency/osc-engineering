@@ -147,9 +147,20 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/5">
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+        <div className="max-w-[1400px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <span>&copy; {new Date().getFullYear()} OSC Engineering. All rights reserved.</span>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
+            <span className="text-slate-500">
+              Built by{" "}
+              <a href="https://thefortaiagency.ai" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-sky-300 transition-colors font-medium">
+                The Fort AI Agency
+              </a>
+              {" "}&times;{" "}
+              <a href="https://aimpactnexus.ai" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-sky-300 transition-colors font-medium">
+                AImpact Nexus
+              </a>
+            </span>
+            <span className="hidden sm:inline w-px h-3 bg-slate-700" />
             <Link href="/privacy-policy" className="hover:text-sky-300 transition-colors">
               Privacy
             </Link>
