@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, FileText, Radio, ShieldAlert, BookOpen, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -84,15 +85,27 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(56,189,248,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
+      <section className="relative py-24 bg-slate-950 overflow-hidden min-h-[60vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-resources.jpg"
+            alt="Cellular antenna tower at sunset with stylized RF exposure contour rings over a coastal urban skyline"
+            fill
+            className="object-cover object-right"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950/60" />
+          <div
+            className="absolute inset-0 opacity-[0.04]"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(56,189,248,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,0.5) 1px, transparent 1px)",
+              backgroundSize: "60px 60px",
+            }}
+          />
+        </div>
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
           <span className="text-sky-400 text-sm font-heading font-semibold tracking-wider uppercase">
             Resources
