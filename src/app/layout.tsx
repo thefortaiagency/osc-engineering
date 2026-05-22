@@ -58,7 +58,7 @@ const jsonLd = {
   description:
     "Independent FCC RF compliance studies, on-site testing, and worker safety training for cell sites, building owners, school districts, and local jurisdictions.",
   url: "https://osc.fort-solutions.com",
-  telephone: ["+1-858-436-4120", "+1-407-923-9605"],
+  telephone: "+1-858-436-4120",
   email: "craig@oscengineering.com",
   areaServed: {
     "@type": "Country",
@@ -77,7 +77,7 @@ const jsonLd = {
   founder: {
     "@type": "Person",
     name: "Craig VanDyke",
-    jobTitle: "Principal RF Engineer",
+    jobTitle: "President",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

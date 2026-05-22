@@ -85,9 +85,9 @@ export default function AboutPage() {
             </li>
           </ul>
 
-          <h2>Our principal</h2>
+          <h2>Our president</h2>
           <p>
-            <strong>Craig VanDyke</strong> leads OSC Engineering. He&rsquo;s spent his career
+            <strong>Craig VanDyke, President,</strong> leads OSC Engineering. He&rsquo;s spent his career
             inside the FCC RF compliance world — reading the rules, walking the sites, and
             translating dense regulatory language into mitigations people can actually
             execute. He knows the difference between an Occupational/Controlled environment

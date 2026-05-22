@@ -49,8 +49,6 @@ export default function ContactPage() {
                 title="Call us"
                 primary="(858) 436-4120"
                 primaryHref="tel:858-436-4120"
-                secondary="Cell: (407) 923-9605"
-                secondaryHref="tel:407-923-9605"
               />
               <ContactCard
                 icon={Mail}

@@ -117,14 +117,6 @@ export function Footer() {
               </li>
               <li>
                 <span className="text-white/40 text-xs uppercase tracking-wider block mb-1">
-                  Cell
-                </span>
-                <a href="tel:407-923-9605" className="hover:text-red-300 transition-colors">
-                  (407) 923-9605
-                </a>
-              </li>
-              <li>
-                <span className="text-white/40 text-xs uppercase tracking-wider block mb-1">
                   Email
                 </span>
                 <a

@@ -33,7 +33,7 @@ export function About() {
                 <blockquote className="text-2xl text-white font-heading font-medium leading-tight">
                   &ldquo;The FCC rules aren&rsquo;t the hard part. Knowing where they actually apply at <em>your</em> site is.&rdquo;
                 </blockquote>
-                <p className="text-red-300 font-heading">— Craig VanDyke, Principal Engineer</p>
+                <p className="text-red-300 font-heading">— Craig VanDyke, President</p>
               </div>
             </div>
             {/* Credential card */}
