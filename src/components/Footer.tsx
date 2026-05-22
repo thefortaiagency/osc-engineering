@@ -125,6 +125,9 @@ export function Footer() {
                 >
                   craig@oscengineering.com
                 </a>
+                <a href="mailto:info@OSCengineering.com" className="hover:text-red-300 transition-colors block mt-1">
+                  info@OSCengineering.com
+                </a>
               </li>
               <li>
                 <span className="text-white/40 text-xs uppercase tracking-wider block mb-1">

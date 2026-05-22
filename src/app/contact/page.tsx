@@ -55,7 +55,8 @@ export default function ContactPage() {
                 title="Email"
                 primary="craig@oscengineering.com"
                 primaryHref="mailto:craig@oscengineering.com"
-                secondary="Response within one business day"
+                secondary="info@OSCengineering.com"
+                secondaryHref="mailto:info@OSCengineering.com"
               />
               <ContactCard
                 icon={MapPin}
