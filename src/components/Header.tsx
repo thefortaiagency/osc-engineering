@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Radio } from "lucide-react";
 
 const navItems = [
   { label: "About", href: "/about" },
@@ -42,18 +42,18 @@ export function Header() {
       <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center group-hover:bg-sky-500/20 transition-colors">
-              <Radio className="w-5 h-5 text-sky-600" />
-            </div>
-            <div>
-              <span className="text-slate-900 font-heading font-bold text-lg tracking-tight">
-                OSC Engineering
-              </span>
-              <span className="hidden lg:block text-[10px] text-slate-500 tracking-widest uppercase">
-                RF Compliance &amp; Site Safety
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-3 group hover:no-underline">
+            <Image
+              src="/images/osc-logo.png"
+              alt="OSC Engineering"
+              width={160}
+              height={80}
+              priority
+              className="h-12 w-auto object-contain"
+            />
+            <span className="hidden lg:block text-[10px] text-slate-500 tracking-widest uppercase">
+              RF Compliance &amp; Site Safety
+            </span>
           </Link>
 
           {/* Desktop nav */}
@@ -62,7 +62,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-50 transition-colors font-medium"
+                className="px-4 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-50 transition-colors font-medium decoration-slate-300 underline-offset-4"
               >
                 {item.label}
               </Link>
@@ -73,7 +73,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="hidden sm:inline-flex px-6 py-2.5 bg-sky-500 text-white font-heading font-semibold text-sm rounded-lg hover:bg-sky-400 transition-colors"
+              className="hidden sm:inline-flex px-6 py-2.5 bg-red-500 text-white font-heading font-semibold text-sm rounded-lg hover:bg-red-400 transition-colors"
             >
               Request Assessment
             </Link>
@@ -117,7 +117,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium"
+                    className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium decoration-slate-300 underline-offset-4"
                   >
                     {item.label}
                   </Link>
@@ -125,11 +125,11 @@ export function Header() {
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="mt-2 px-6 py-3.5 bg-sky-500 text-white font-heading font-semibold text-center rounded-lg hover:bg-sky-400 transition-colors"
+                  className="mt-2 px-6 py-3.5 bg-red-500 text-white font-heading font-semibold text-center rounded-lg hover:bg-red-400 transition-colors"
                 >
                   Request Assessment
                 </Link>
-                <a href="tel:858-436-4120" className="px-4 py-3 text-sky-600 text-center font-semibold">
+                <a href="tel:858-436-4120" className="px-4 py-3 text-red-600 text-center font-semibold">
                   Call (858) 436-4120
                 </a>
               </nav>

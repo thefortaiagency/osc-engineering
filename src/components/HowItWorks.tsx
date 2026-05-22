@@ -35,7 +35,7 @@ export function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mb-16 max-w-2xl mx-auto"
         >
-          <span className="text-sky-600 text-sm font-heading font-semibold tracking-wider uppercase">
+          <span className="text-red-600 text-sm font-heading font-semibold tracking-wider uppercase">
             How It Works
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
@@ -59,7 +59,7 @@ export function HowItWorks() {
               className="relative bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow ring-1 ring-black/5"
             >
               {/* Step number */}
-              <div className="w-12 h-12 rounded-xl bg-sky-500 text-white flex items-center justify-center font-heading font-bold text-lg mb-6">
+              <div className="w-12 h-12 rounded-xl bg-red-500 text-white flex items-center justify-center font-heading font-bold text-lg mb-6">
                 {step.number}
               </div>
 
@@ -72,7 +72,7 @@ export function HowItWorks() {
 
               {/* Connector line on desktop */}
               {i < steps.length - 1 && (
-                <div className="hidden md:block absolute top-14 -right-4 w-8 border-t-2 border-dashed border-sky-400/40 z-10" />
+                <div className="hidden md:block absolute top-14 -right-4 w-8 border-t-2 border-dashed border-red-400/40 z-10" />
               )}
             </motion.div>
           ))}
@@ -87,7 +87,7 @@ export function HowItWorks() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors shadow-lg shadow-sky-500/25"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-red-500 text-white font-heading font-semibold rounded-lg hover:bg-red-400 transition-colors shadow-lg shadow-red-500/25"
           >
             Book a 20-min Intake Call
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

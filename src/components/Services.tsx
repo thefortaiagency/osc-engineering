@@ -60,7 +60,7 @@ export function Services() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <span className="inline-block text-xs font-heading font-semibold text-sky-600 tracking-wider uppercase">
+          <span className="inline-block text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
             Services
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
@@ -84,9 +84,9 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="group p-8 rounded-2xl border border-slate-200 hover:border-sky-300 hover:shadow-lg transition-all bg-white"
+                className="group p-8 rounded-2xl border border-slate-200 hover:border-red-300 hover:shadow-lg transition-all bg-white"
               >
-                <div className="w-12 h-12 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center group-hover:bg-sky-100 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center group-hover:bg-red-100 transition-colors">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="mt-6 text-xl font-heading font-bold text-slate-900">

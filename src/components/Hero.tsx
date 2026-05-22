@@ -40,8 +40,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 text-sky-300 text-xs font-heading font-semibold tracking-wider uppercase border border-sky-400/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 text-red-300 text-xs font-heading font-semibold tracking-wider uppercase border border-red-400/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
               FCC RF Compliance &middot; Nationwide
             </span>
           </motion.div>
@@ -53,7 +53,7 @@ export function Hero() {
             className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-[1.05]"
           >
             Independent RF compliance studies for{" "}
-            <span className="text-sky-400">cell sites you can trust</span>
+            <span className="text-red-400">cell sites you can trust</span>
             .
           </motion.h1>
 
@@ -77,7 +77,7 @@ export function Hero() {
           >
             <Link
               href="/contact"
-              className="px-8 py-4 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors flex items-center gap-3 text-lg shadow-lg shadow-sky-500/25"
+              className="px-8 py-4 bg-red-500 text-white font-heading font-semibold rounded-lg hover:bg-red-400 transition-colors flex items-center gap-3 text-lg shadow-lg shadow-red-500/25"
             >
               Request a Site Assessment
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

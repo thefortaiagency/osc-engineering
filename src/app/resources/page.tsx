@@ -107,7 +107,7 @@ export default function ResourcesPage() {
           />
         </div>
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-sky-400 text-sm font-heading font-semibold tracking-wider uppercase">
+          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
             Resources
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
@@ -125,7 +125,7 @@ export default function ResourcesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
-            <span className="text-xs font-heading font-semibold text-sky-600 tracking-wider uppercase">
+            <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
               Common Questions
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
@@ -139,9 +139,9 @@ export default function ResourcesPage() {
               return (
                 <div
                   key={e.title}
-                  className="p-8 rounded-2xl border border-slate-200 bg-white hover:border-sky-300 hover:shadow-lg transition-all"
+                  className="p-8 rounded-2xl border border-slate-200 bg-white hover:border-red-300 hover:shadow-lg transition-all"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="mt-6 text-xl font-heading font-bold text-slate-900">{e.title}</h3>
@@ -154,7 +154,7 @@ export default function ResourcesPage() {
           <div className="mt-12 text-center">
             <Link
               href="/faqs"
-              className="inline-flex items-center gap-2 text-sky-600 font-heading font-semibold hover:text-sky-700"
+              className="inline-flex items-center gap-2 text-red-600 font-heading font-semibold hover:text-red-700"
             >
               See the full FAQ
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -169,14 +169,14 @@ export default function ResourcesPage() {
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
-            <span className="text-xs font-heading font-semibold text-sky-600 tracking-wider uppercase">
+            <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
               Primary Sources
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
               The regulations &amp; standards we cite.
             </h2>
             <p className="mt-5 text-slate-600 leading-relaxed">
-              Every OSC report names the specific provisions that apply to your site,
+              Every OSC Engineering report names the specific provisions that apply to your site,
               so a reader — attorney, insurer, board member, parent — can verify the
               work themselves. Here&apos;s where those citations live.
             </p>
@@ -189,18 +189,18 @@ export default function ResourcesPage() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 rounded-xl border border-slate-200 bg-white hover:border-sky-300 hover:shadow-md transition-all"
+                className="group block p-6 rounded-xl border border-slate-200 bg-white hover:border-red-300 hover:shadow-md transition-all"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
                     <FileText className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <h3 className="font-heading font-bold text-slate-900 text-base sm:text-lg group-hover:text-sky-600 transition-colors">
+                      <h3 className="font-heading font-bold text-slate-900 text-base sm:text-lg group-hover:text-red-600 transition-colors">
                         {s.title}
                       </h3>
-                      <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-sky-500 transition-colors" />
+                      <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-red-500 transition-colors" />
                     </div>
                     <p className="mt-2 text-slate-600 leading-relaxed text-sm">{s.description}</p>
                     <p className="mt-2 text-xs text-slate-500 font-mono">{s.cite}</p>
@@ -225,7 +225,7 @@ export default function ResourcesPage() {
           </p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex items-center gap-3 px-8 py-4 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors shadow-lg shadow-sky-500/25"
+            className="mt-8 inline-flex items-center gap-3 px-8 py-4 bg-red-500 text-white font-heading font-semibold rounded-lg hover:bg-red-400 transition-colors shadow-lg shadow-red-500/25"
           >
             Schedule the intake call
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

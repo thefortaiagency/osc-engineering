@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
     <article className="max-w-3xl mx-auto px-6 py-20 prose prose-slate">
       <h1>Privacy Policy</h1>
       <p>
-        OSC Engineering (&ldquo;OSC&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is committed to
+        OSC Engineering (&ldquo;we&rdquo;, &ldquo;us&rdquo;) is committed to
         protecting the privacy of the people and organizations that contact us.
       </p>
 

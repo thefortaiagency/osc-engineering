@@ -22,7 +22,7 @@ export default function ContactPage() {
           }}
         />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-sky-400 text-sm font-heading font-semibold tracking-wider uppercase">
+          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
             Contact
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
@@ -91,14 +91,14 @@ function ContactCard({
   return (
     <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
       <div className="flex items-start gap-4">
-        <div className="w-11 h-11 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
+        <div className="w-11 h-11 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
           <Icon className="w-5 h-5" />
         </div>
         <div className="flex-1">
           <h3 className="font-heading font-bold text-slate-900 text-base">{title}</h3>
           <p className="mt-1">
             {primaryHref ? (
-              <a href={primaryHref} className="text-slate-900 font-semibold hover:text-sky-600">
+              <a href={primaryHref} className="text-slate-900 font-semibold hover:text-red-600">
                 {primary}
               </a>
             ) : (
@@ -108,7 +108,7 @@ function ContactCard({
           {secondary && (
             <p className="mt-1 text-sm text-slate-600">
               {secondaryHref ? (
-                <a href={secondaryHref} className="hover:text-sky-600">
+                <a href={secondaryHref} className="hover:text-red-600">
                   {secondary}
                 </a>
               ) : (

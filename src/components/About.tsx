@@ -16,7 +16,7 @@ export function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-slate-900 to-sky-950 p-12 flex flex-col justify-center shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-slate-900 to-red-950 p-12 flex flex-col justify-center shadow-2xl">
               {/* Grid pattern */}
               <div
                 className="absolute inset-0 opacity-[0.06]"
@@ -27,18 +27,18 @@ export function About() {
                 }}
               />
               <div className="relative z-10 space-y-8">
-                <div className="w-16 h-16 rounded-xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center">
-                  <Radio className="w-8 h-8 text-sky-400" />
+                <div className="w-16 h-16 rounded-xl bg-red-500/10 border border-red-400/20 flex items-center justify-center">
+                  <Radio className="w-8 h-8 text-red-400" />
                 </div>
                 <blockquote className="text-2xl text-white font-heading font-medium leading-tight">
                   &ldquo;The FCC rules aren&rsquo;t the hard part. Knowing where they actually apply at <em>your</em> site is.&rdquo;
                 </blockquote>
-                <p className="text-sky-300 font-heading">— Craig VanDyke, Principal Engineer</p>
+                <p className="text-red-300 font-heading">— Craig VanDyke, Principal Engineer</p>
               </div>
             </div>
             {/* Credential card */}
             <div className="absolute -bottom-6 right-4 lg:right-8 bg-white rounded-xl shadow-2xl p-5 ring-1 ring-black/5">
-              <p className="text-sky-600 font-heading font-bold text-2xl">FCC OET 65</p>
+              <p className="text-red-600 font-heading font-bold text-2xl">FCC OET 65</p>
               <p className="text-slate-600 text-sm mt-1">Trained &middot; Independent &middot; Carrier-Neutral</p>
             </div>
           </motion.div>
@@ -49,7 +49,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-sky-600 text-sm font-heading font-semibold tracking-wider uppercase">
+            <span className="text-red-600 text-sm font-heading font-semibold tracking-wider uppercase">
               About OSC Engineering
             </span>
             <h2 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
@@ -80,8 +80,8 @@ export function About() {
                 const Icon = item.icon;
                 return (
                   <div key={item.title} className="flex gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center shrink-0 mt-0.5">
-                      <Icon className="w-5 h-5 text-sky-600" />
+                    <div className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center shrink-0 mt-0.5">
+                      <Icon className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
                       <h4 className="text-slate-900 font-heading font-semibold text-base">{item.title}</h4>

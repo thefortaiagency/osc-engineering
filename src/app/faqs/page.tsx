@@ -74,7 +74,7 @@ export default function FaqsPage() {
           }}
         />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-sky-400 text-sm font-heading font-semibold tracking-wider uppercase">
+          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
             FAQs
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
@@ -104,7 +104,7 @@ export default function FaqsPage() {
                   <span className="font-heading font-semibold text-slate-900 text-base sm:text-lg">
                     {faq.question}
                   </span>
-                  <div className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>

@@ -45,8 +45,8 @@ export function ContactForm() {
   if (status === "ok") {
     return (
       <div className="bg-white border border-slate-200 p-8 md:p-10 rounded-2xl text-center shadow-sm">
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-sky-100 mb-4">
-          <CheckCircle2 className="w-7 h-7 text-sky-600" />
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-red-100 mb-4">
+          <CheckCircle2 className="w-7 h-7 text-red-600" />
         </div>
         <h3 className="text-2xl font-heading font-bold text-slate-900">Got it — Craig will be in touch.</h3>
         <p className="mt-3 text-slate-600">
@@ -54,7 +54,7 @@ export function ContactForm() {
         </p>
         <p className="mt-4 text-sm text-slate-500">
           Time-sensitive? Call{" "}
-          <a href="tel:858-436-4120" className="text-sky-600 font-semibold">
+          <a href="tel:858-436-4120" className="text-red-600 font-semibold">
             (858) 436-4120
           </a>
           .
@@ -95,7 +95,7 @@ export function ContactForm() {
           required
           rows={5}
           placeholder="Address (or city/state), antenna count if known, what you need — annual study, lease review, dispute, training, etc."
-          className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
+          className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
         />
       </div>
 
@@ -109,7 +109,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors shadow-lg shadow-sky-500/25 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-red-500 text-white font-heading font-semibold rounded-lg hover:bg-red-400 transition-colors shadow-lg shadow-red-500/25 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "sending" ? (
           <>
@@ -144,7 +144,7 @@ function Field({
   return (
     <div>
       <label htmlFor={name} className="block text-sm font-heading font-semibold text-slate-800 mb-2">
-        {label} {required && <span className="text-sky-600">*</span>}
+        {label} {required && <span className="text-red-600">*</span>}
       </label>
       <input
         id={name}
@@ -152,7 +152,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
+        className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
       />
     </div>
   );

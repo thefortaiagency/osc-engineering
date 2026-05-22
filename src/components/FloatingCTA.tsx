@@ -26,7 +26,7 @@ export function FloatingCTA() {
       </a>
       <Link
         href="/contact"
-        className="flex-1 py-3 px-4 bg-sky-500 text-white font-heading font-semibold text-sm rounded-lg text-center hover:bg-sky-400 transition-colors"
+        className="flex-1 py-3 px-4 bg-red-500 text-white font-heading font-semibold text-sm rounded-lg text-center hover:bg-red-400 transition-colors"
       >
         Request Assessment
       </Link>

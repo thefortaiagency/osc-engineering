@@ -11,6 +11,34 @@
   --color-foreground: var(--foreground);
   --font-heading: var(--font-jakarta);
   --font-body: var(--font-inter);
+
+  /* OSC Engineering brand red — overrides Tailwind's default red scale so
+     every bg-red-* / text-red-* utility resolves to the logo's deep brick
+     red (#9a1202 sampled from the actual PSD) and shades scale from there. */
+  --color-red-50: #fbf1f1;
+  --color-red-100: #f6dcdc;
+  --color-red-200: #ecbcbc;
+  --color-red-300: #e09797;
+  --color-red-400: #cd5e54;
+  --color-red-500: #b81f10;
+  --color-red-600: #9a1202;
+  --color-red-700: #7c0e02;
+  --color-red-800: #5e0a01;
+  --color-red-900: #460701;
+  --color-red-950: #2a0400;
+}
+
+@layer base {
+  /* Subtle default hover on any anchor without its own hover styling — adds
+     an underline + slight color lift so links feel responsive site-wide. */
+  a {
+    transition: color 150ms ease, text-decoration-color 150ms ease;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
 }
 
 @layer base {

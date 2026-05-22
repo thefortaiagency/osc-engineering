@@ -22,7 +22,7 @@ export default function AboutPage() {
           }}
         />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-sky-400 text-sm font-heading font-semibold tracking-wider uppercase">
+          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
             About
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
@@ -101,7 +101,7 @@ export default function AboutPage() {
             most of the time it doesn&rsquo;t.
           </p>
 
-          <h2>The OSC promise</h2>
+          <h2>The OSC Engineering promise</h2>
           <ul>
             <li>
               <strong>Independent.</strong> No carrier equity, no kickbacks. We work for whoever
@@ -112,7 +112,7 @@ export default function AboutPage() {
               ANSI/IEEE provisions so a reader can verify the work.
             </li>
             <li>
-              <strong>Plain-English.</strong> The 47 CFR is a hard read. The OSC report
+              <strong>Plain-English.</strong> The 47 CFR is a hard read. The OSC Engineering report
               isn&rsquo;t.
             </li>
             <li>
@@ -121,7 +121,7 @@ export default function AboutPage() {
             </li>
           </ul>
 
-          <div className="not-prose mt-12 p-8 rounded-2xl bg-sky-50 border border-sky-200">
+          <div className="not-prose mt-12 p-8 rounded-2xl bg-red-50 border border-red-200">
             <p className="text-slate-700 leading-relaxed">
               <strong className="text-slate-900">Have a site that needs a real answer?</strong>{" "}
               The first call is free. We&rsquo;ll tell you whether it&rsquo;s a desk review, a
@@ -129,7 +129,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="mt-5 inline-flex items-center gap-3 px-6 py-3 bg-sky-500 text-white font-heading font-semibold rounded-lg hover:bg-sky-400 transition-colors"
+              className="mt-5 inline-flex items-center gap-3 px-6 py-3 bg-red-500 text-white font-heading font-semibold rounded-lg hover:bg-red-400 transition-colors"
             >
               Schedule the intake call
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               const Icon = c.icon;
               return (
                 <div key={c.label} className="bg-white rounded-xl p-6 border border-slate-200 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
                     <Icon className="w-6 h-6" />
                   </div>
                   <span className="font-heading font-semibold text-slate-900">{c.label}</span>
