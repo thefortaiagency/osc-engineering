@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
       <p>
         You can request a copy of your information, or ask us to delete it (subject to the
         retention requirements above), by emailing{" "}
-        <a href="mailto:craig@oscengineering.com">craig@oscengineering.com</a>.
+        <a href="mailto:info@OSCengineering.com" className="text-red-600 hover:text-red-700">info@OSCengineering.com</a>.
       </p>
 
       <p className="text-sm text-slate-500 mt-12">Last updated: {new Date().getFullYear()}</p>

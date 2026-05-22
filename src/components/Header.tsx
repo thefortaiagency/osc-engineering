@@ -26,13 +26,8 @@ export function Header() {
               (858) 436-4120
             </a>
             <span className="w-px h-4 bg-slate-700" />
-            <a href="mailto:info@OSCengineering.com" className="hover:text-white transition-colors hidden sm:inline">
+            <a href="mailto:info@OSCengineering.com" className="hover:text-white transition-colors">
               info@OSCengineering.com
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="mailto:craig@oscengineering.com" className="text-slate-400 hover:text-white transition-colors">
-              craig@oscengineering.com
             </a>
           </div>
         </div>

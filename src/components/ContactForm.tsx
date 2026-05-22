@@ -38,7 +38,7 @@ export function ContactForm() {
       form.reset();
     } catch (err) {
       setStatus("error");
-      setErrorMessage("Connection failed. Please call (858) 436-4120 or email craig@oscengineering.com directly.");
+      setErrorMessage("Connection failed. Please call (858) 436-4120 or email info@OSCengineering.com directly.");
     }
   }
 
@@ -48,9 +48,9 @@ export function ContactForm() {
         <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-red-100 mb-4">
           <CheckCircle2 className="w-7 h-7 text-red-600" />
         </div>
-        <h3 className="text-2xl font-heading font-bold text-slate-900">Got it — Craig will be in touch.</h3>
+        <h3 className="text-2xl font-heading font-bold text-slate-900">Got it — OSC Engineering will be in touch.</h3>
         <p className="mt-3 text-slate-600">
-          Your message went straight to craig@oscengineering.com. He responds within one business day.
+          Your message went straight to info@OSCengineering.com. We respond within one business day.
         </p>
         <p className="mt-4 text-sm text-slate-500">
           Time-sensitive? Call{" "}

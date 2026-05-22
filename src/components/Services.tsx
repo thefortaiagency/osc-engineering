@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Activity, Radio, ClipboardCheck, GraduationCap, Wrench, FileText } from "lucide-react";
+import { Activity, Radio, ClipboardCheck, GraduationCap, Wrench, FileText, FileSearch } from "lucide-react";
 
 const services = [
   {
@@ -25,6 +25,13 @@ const services = [
       "Specific, actionable mitigations to bring a non-compliant site into FCC compliance: signage, barriers, lockout procedures, antenna repositioning, power reductions, or worker training requirements.",
     icon: ClipboardCheck,
     deliverable: "Written remediation plan with prioritized actions",
+  },
+  {
+    title: "Expert Review of RF Reports",
+    description:
+      "Independent second-opinion review of existing EME, EMF, and RF exposure assessments — the reports a carrier, third-party engineer, or prior consultant already produced. We verify methodology against FCC OET Bulletin 65 and 47 CFR § 1.1310, check MPE calculations, and flag whether the stated conclusions actually follow from the data. Built for jurisdictions, building owners, attorneys, and operators evaluating someone else's work.",
+    icon: FileSearch,
+    deliverable: "Technical review memo with methodology critique and MPE recalculations where needed",
   },
   {
     title: "Worker Safety Training",

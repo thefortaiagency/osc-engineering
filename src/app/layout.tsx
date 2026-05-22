@@ -59,7 +59,7 @@ const jsonLd = {
     "Independent FCC RF compliance studies, on-site testing, and worker safety training for cell sites, building owners, school districts, and local jurisdictions.",
   url: "https://osc.fort-solutions.com",
   telephone: "+1-858-436-4120",
-  email: "craig@oscengineering.com",
+  email: "info@OSCengineering.com",
   areaServed: {
     "@type": "Country",
     name: "United States",

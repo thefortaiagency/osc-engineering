@@ -120,12 +120,9 @@ export function Footer() {
                   Email
                 </span>
                 <a
-                  href="mailto:craig@oscengineering.com"
+                  href="mailto:info@OSCengineering.com"
                   className="hover:text-red-300 transition-colors"
                 >
-                  craig@oscengineering.com
-                </a>
-                <a href="mailto:info@OSCengineering.com" className="hover:text-red-300 transition-colors block mt-1">
                   info@OSCengineering.com
                 </a>
               </li>

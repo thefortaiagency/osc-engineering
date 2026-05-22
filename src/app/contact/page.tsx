@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact OSC Engineering",
   description:
-    "Request a site assessment, lease review, or RF compliance consultation. Independent FCC RF expertise — nationwide. Call (858) 436-4120 or email craig@oscengineering.com.",
+    "Request a site assessment, lease review, or RF compliance consultation. Independent FCC RF expertise — nationwide. Call (858) 436-4120 or email info@OSCengineering.com.",
 };
 
 export default function ContactPage() {
@@ -53,10 +53,9 @@ export default function ContactPage() {
               <ContactCard
                 icon={Mail}
                 title="Email"
-                primary="craig@oscengineering.com"
-                primaryHref="mailto:craig@oscengineering.com"
-                secondary="info@OSCengineering.com"
-                secondaryHref="mailto:info@OSCengineering.com"
+                primary="info@OSCengineering.com"
+                primaryHref="mailto:info@OSCengineering.com"
+                secondary="Response within one business day"
               />
               <ContactCard
                 icon={MapPin}
