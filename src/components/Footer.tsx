@@ -48,12 +48,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="mb-4 inline-block bg-white rounded-lg p-3">
+            <div className="mb-4 inline-block bg-white rounded-lg px-2 py-1.5">
               <Image
                 src="/images/osc-logo.png"
                 alt="OSC Engineering"
                 width={200}
-                height={100}
+                height={134}
                 className="h-14 w-auto object-contain"
               />
             </div>
