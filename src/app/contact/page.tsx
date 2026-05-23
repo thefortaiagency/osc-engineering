@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { HeroWatermark } from "@/components/HeroWatermark";
 
 export const metadata: Metadata = {
   title: "Contact OSC Engineering",
@@ -13,6 +14,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="relative py-20 bg-slate-950 overflow-hidden">
+        <HeroWatermark />
         <div
           className="absolute inset-0 opacity-[0.06]"
           style={{

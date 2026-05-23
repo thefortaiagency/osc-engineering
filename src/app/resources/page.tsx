@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, FileText, Radio, ShieldAlert, BookOpen, AlertTriangle } from "lucide-react";
+import { HeroWatermark } from "@/components/HeroWatermark";
 
 export const metadata: Metadata = {
   title: "RF Compliance Resources & References",
@@ -86,6 +87,7 @@ export default function ResourcesPage() {
     <>
       {/* Hero */}
       <section className="relative py-24 bg-slate-950 overflow-hidden min-h-[60vh] flex items-center">
+        <HeroWatermark />
         <div className="absolute inset-0">
           <Image
             src="/images/hero-resources.jpg"

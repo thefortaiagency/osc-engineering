@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Radio, ShieldCheck, Building2, GraduationCap, Landmark, AlertTriangle } from "lucide-react";
+import { HeroWatermark } from "@/components/HeroWatermark";
 
 export const metadata: Metadata = {
   title: "About OSC Engineering — Independent RF Compliance",
@@ -14,6 +15,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
+        <HeroWatermark />
         <div className="absolute inset-0">
           <Image
             src="/images/about-hero.jpg"

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import { HeroWatermark } from "@/components/HeroWatermark";
 
 const faqs = [
   {
@@ -66,6 +67,7 @@ export default function FaqsPage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
+        <HeroWatermark />
         <div className="absolute inset-0">
           <Image
             src="/images/faqs-hero.jpg"
