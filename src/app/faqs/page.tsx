@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
@@ -64,26 +65,35 @@ export default function FaqsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(56,189,248,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
-            FAQs
-          </span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Straight answers on FCC RF compliance.
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            Written for landlords, school boards, attorneys, and anyone who needs
-            to understand what the carriers are actually doing on their site.
-          </p>
+      <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/faqs-hero.jpg"
+            alt="Mission-style church steeple with cellular antennas concealed behind louvered bell-tower openings"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/10" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
+          <div className="max-w-3xl">
+            <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
+              FAQs
+            </span>
+            <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
+              Straight answers on FCC RF compliance.
+            </h1>
+            <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
+              Written for landlords, school boards, attorneys, and anyone who needs
+              to understand what the carriers are actually doing on their site.
+            </p>
+            <p className="mt-4 text-sm text-slate-300 italic">
+              Pictured: a church steeple with antennas hidden behind louvered openings — one of dozens of common stealth installation patterns.
+            </p>
+          </div>
         </div>
       </section>
 

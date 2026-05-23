@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { TrustBar } from "@/components/TrustBar";
 import { Services } from "@/components/Services";
+import { StealthCallout } from "@/components/StealthCallout";
 import { HowItWorks } from "@/components/HowItWorks";
 import { About } from "@/components/About";
 import { CTASection } from "@/components/CTASection";
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <Services />
+      <StealthCallout />
       <HowItWorks />
       <About />
       <CTASection />

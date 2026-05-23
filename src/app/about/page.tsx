@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Radio, ShieldCheck, Building2, GraduationCap, Landmark, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -12,22 +13,31 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(56,189,248,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
-            About
-          </span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            The independent RF expert your insurer, attorney, and board want to see on the file.
-          </h1>
+      <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/about-hero.jpg"
+            alt="Stealth cell tower disguised as a palm tree in a suburban Southern California setting"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/10" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
+          <div className="max-w-3xl">
+            <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">
+              About
+            </span>
+            <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
+              The independent RF expert your insurer, attorney, and board want to see on the file.
+            </h1>
+            <p className="mt-5 text-base sm:text-lg text-slate-300 italic">
+              Pictured: a stealth cellular installation disguised as a palm tree — a common reason RF compliance gets overlooked.
+            </p>
+          </div>
         </div>
       </section>
 
