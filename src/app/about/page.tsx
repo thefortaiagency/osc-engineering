@@ -98,14 +98,14 @@ export default function AboutPage() {
           </ul>
 
           <p>
-            Secondary focus: <strong>workers exposed to RF on the job</strong> — HVAC,
+            We also serve <strong>workers exposed to RF on the job</strong> — HVAC,
             roofing, antenna riggers, building maintenance, and anyone working near
             transmitting equipment. Compliance training is what moves a site from
             General Population/Uncontrolled limits to Occupational/Controlled limits.
           </p>
 
           <p>
-            Tertiary: <strong>wireless operators &amp; contractors</strong> who want a
+            And <strong>wireless operators &amp; contractors</strong> who want a
             third-party compliance study, RF safety training for crews, or an independent
             review of a site they&rsquo;re inheriting.
           </p>
