@@ -123,8 +123,84 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Explainers */}
+      {/* FCC & RF Safety Overview */}
       <section className="py-20 bg-white">
+        <div className="max-w-[900px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="mb-8">
+            <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
+              FCC &amp; RF Safety
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              What the FCC governs &mdash; and why exposure matters.
+            </h2>
+          </div>
+
+          <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
+            The{" "}
+            <a
+              href="https://www.fcc.gov/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 hover:text-red-700 font-semibold"
+            >
+              Federal Communications Commission
+            </a>{" "}
+            (FCC) governs the telecommunications services, facilities, and devices
+            used by the public, industrial, and state organizations. The FCC enforces
+            RF radiation safety compliance rules for all RF telecommunication providers
+            &mdash; the area where questions and concerns about potential safety and
+            health most often arise. There have been many inquiries about human hazard
+            exposure levels and how much RF sites emit. Heightened awareness of the
+            expanding use of RF technology has led some people to speculate about
+            significant health risks from RF sites. Potential effects of overexposure
+            to radio frequency radiation include (but are not limited to) the following:
+          </p>
+
+          <ul className="mt-6 grid sm:grid-cols-2 gap-x-8 gap-y-2 text-slate-700">
+            {[
+              {
+                label: "Anemia",
+                href: "https://www.nhlbi.nih.gov/health/anemia",
+              },
+              { label: "Bleeding" },
+              { label: "Diarrhea" },
+              { label: "Fatigue / Weakness" },
+              { label: "Hair Loss" },
+              { label: "Headache" },
+              { label: "Loss of Appetite" },
+              { label: "Nausea / Vomiting" },
+              { label: "Red itchy skin" },
+              { label: "Sore Mouth / Sore Throat" },
+              { label: "Weight Loss" },
+            ].map((s) => (
+              <li key={s.label} className="flex items-baseline gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-600 shrink-0 translate-y-[-2px]" />
+                {s.href ? (
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-red-600 hover:text-red-700"
+                  >
+                    {s.label}
+                  </a>
+                ) : (
+                  <span>{s.label}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-6 text-sm text-slate-500 italic">
+            Above-limit RF exposure is what these rules exist to prevent &mdash; not
+            normal compliant operation, which the FCC&apos;s MPE limits hold well
+            below known thermal-effect thresholds.
+          </p>
+        </div>
+      </section>
+
+      {/* Explainers */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
@@ -168,7 +244,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Standards */}
-      <section className="py-20 bg-slate-50 border-y border-slate-200">
+      <section className="py-20 bg-white border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
