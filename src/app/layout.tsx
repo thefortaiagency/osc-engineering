@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | OSC Engineering",
   },
   description:
-    "Independent FCC RF compliance studies, on-site testing, and worker safety training for cell sites. Trusted by property owners, school districts, and local jurisdictions. Carrier-neutral expertise grounded in 47 CFR § 1.1310 and FCC OET 65.",
+    "Independent FCC RF compliance for landlords, school districts, and local planning departments. On-site testing, expert review of carrier reports, and worker RF safety training. Carrier-neutral expertise grounded in 47 CFR § 1.1310 and FCC OET 65. Also serves wireless carriers.",
   keywords: [
     "FCC RF compliance",
     "RF safety compliance study",
@@ -56,7 +56,7 @@ const jsonLd = {
   name: "OSC Engineering",
   alternateName: "Occupational Safety & Compliance Engineering",
   description:
-    "Independent FCC RF compliance studies, on-site testing, and worker safety training for cell sites, building owners, school districts, and local jurisdictions.",
+    "Independent FCC RF compliance for landlords, school districts, and local planning departments. On-site testing, expert review of carrier reports, worker RF safety training.",
   url: "https://osc.fort-solutions.com",
   telephone: "+1-858-436-4120",
   email: "info@OSCengineering.com",

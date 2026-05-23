@@ -6,7 +6,7 @@ import { Radio, ShieldCheck, Building2, GraduationCap, Landmark, AlertTriangle }
 export const metadata: Metadata = {
   title: "About OSC Engineering — Independent RF Compliance",
   description:
-    "OSC Engineering provides independent FCC RF compliance studies for property owners, school districts, jurisdictions, and wireless operators. Led by Craig VanDyke, RF engineer with deep expertise in 47 CFR § 1.1310, FCC OET 65, and ANSI/IEEE C95.1.",
+    "OSC Engineering provides independent FCC RF compliance for landlords, school districts, and local planning departments — plus workers near antennas and (where it serves the primary client) wireless carriers. Led by Craig VanDyke, President, with deep expertise in 47 CFR § 1.1310, FCC OET 65, and ANSI/IEEE C95.1.",
 };
 
 export default function AboutPage() {
@@ -48,8 +48,10 @@ export default function AboutPage() {
           <p>
             OSC Engineering — Occupational Safety &amp; Compliance Engineering — provides
             Radio Frequency (RF) Electromagnetic Emissions (EME) technical services to
-            property owners, school districts, local jurisdictions, and wireless operators
-            who need to verify and document compliance with FCC RF exposure limits.
+            landlords, school districts, and local planning departments who need to verify
+            and document compliance with FCC RF exposure limits. We also serve workers
+            who are exposed to RF on the job and (where it serves the primary client)
+            wireless carriers and their contractors.
           </p>
 
           <p>
@@ -68,15 +70,20 @@ export default function AboutPage() {
 
           <h2>Who we work with</h2>
           <p>
-            We serve four primary client groups, each with a different need but the same underlying question:
+            Three primary client groups, each with a different need but the same
+            underlying question:
             <em> &ldquo;Is this site safe, and can I prove it?&rdquo;</em>
           </p>
 
           <ul>
             <li>
-              <strong>Property owners</strong> with rooftop antennas or ground-mount monopoles
-              who need to verify their tenant carriers are within compliance and that their
-              own workers (HVAC, roofers, maintenance) are protected.
+              <strong>Landlords</strong> — anyone hosting or considering hosting cellular
+              equipment on their property. That includes residential owners, churches and
+              other faith buildings, office buildings, hotels, shopping centers, water
+              towers / tanks, billboard structures, industrial and warehouse property,
+              hospitals and clinics, self-storage facilities, parking structures, HOAs and
+              condo associations. The lease pays — but the liability if compliance lapses
+              sits with the property.
             </li>
             <li>
               <strong>School districts</strong> facing parent or community concerns about cell
@@ -84,16 +91,24 @@ export default function AboutPage() {
               proposed.
             </li>
             <li>
-              <strong>Local jurisdictions</strong> — planning departments, zoning boards, and
-              elected officials who need an independent technical opinion on proposed wireless
-              installations.
-            </li>
-            <li>
-              <strong>Wireless operators &amp; contractors</strong> who want a third-party
-              compliance study, RF safety training for crews, or an independent review of a
-              site they&rsquo;re inheriting.
+              <strong>Local planning departments &amp; municipalities</strong> — planners,
+              zoning boards, and elected officials who need an independent technical opinion
+              on proposed wireless installations during permitting review.
             </li>
           </ul>
+
+          <p>
+            Secondary focus: <strong>workers exposed to RF on the job</strong> — HVAC,
+            roofing, antenna riggers, building maintenance, and anyone working near
+            transmitting equipment. Compliance training is what moves a site from
+            General Population/Uncontrolled limits to Occupational/Controlled limits.
+          </p>
+
+          <p>
+            Tertiary: <strong>wireless operators &amp; contractors</strong> who want a
+            third-party compliance study, RF safety training for crews, or an independent
+            review of a site they&rsquo;re inheriting.
+          </p>
 
           <h2>Our president</h2>
           <p>

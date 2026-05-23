@@ -63,10 +63,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl"
           >
-            OSC Engineering helps building owners, school districts, jurisdictions,
-            and wireless operators meet FCC RF exposure limits — with on-site testing,
-            expert review, and worker safety training grounded in 47 CFR §&nbsp;1.1310
-            and FCC OET Bulletin 65.
+            OSC Engineering works for <strong>landlords, school districts, and local
+            planning departments</strong> who need an independent read on the RF activity
+            at their site — plus the workers exposed to it, and (when needed) the
+            wireless carriers themselves. On-site testing, expert review, and worker
+            safety training grounded in 47 CFR §&nbsp;1.1310 and FCC OET Bulletin 65.
           </motion.p>
 
           <motion.div
