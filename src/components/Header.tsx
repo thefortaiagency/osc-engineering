@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
@@ -13,8 +14,17 @@ const navItems = [
   { label: "FAQs", href: "/faqs" },
 ];
 
+function isActive(pathname: string, href: string): boolean {
+  // Match by pathname only (ignore hash). For home-page anchors (e.g. /#services),
+  // treat them as "active" when the user is on the home page.
+  const target = href.split("#")[0] || "/";
+  if (target === "/") return pathname === "/";
+  return pathname === target || pathname.startsWith(target + "/");
+}
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -53,15 +63,23 @@ export function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-4 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-50 transition-colors font-medium decoration-slate-300 underline-offset-4"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const active = isActive(pathname, item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`px-4 py-2 text-sm rounded-lg transition-colors font-medium underline-offset-4 ${
+                    active
+                      ? "text-slate-900 underline decoration-red-600 decoration-2"
+                      : "text-slate-700 hover:text-slate-900 hover:bg-slate-50 decoration-slate-300"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* CTA + Mobile toggle */}
@@ -107,16 +125,24 @@ export function Header() {
               className="lg:hidden overflow-hidden border-t border-slate-200"
             >
               <nav className="px-6 py-4 flex flex-col gap-1 bg-white">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium decoration-slate-300 underline-offset-4"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {navItems.map((item) => {
+                  const active = isActive(pathname, item.href);
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={active ? "page" : undefined}
+                      className={`px-4 py-3 rounded-lg transition-colors font-medium underline-offset-4 ${
+                        active
+                          ? "text-slate-900 underline decoration-red-600 decoration-2"
+                          : "text-slate-700 hover:text-slate-900 hover:bg-slate-50 decoration-slate-300"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
