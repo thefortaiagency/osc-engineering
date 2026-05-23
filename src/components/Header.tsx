@@ -15,11 +15,13 @@ const navItems = [
 ];
 
 function isActive(pathname: string, href: string): boolean {
-  // Match by pathname only (ignore hash). For home-page anchors (e.g. /#services),
-  // treat them as "active" when the user is on the home page.
-  const target = href.split("#")[0] || "/";
-  if (target === "/") return pathname === "/";
-  return pathname === target || pathname.startsWith(target + "/");
+  // Only highlight route-based nav items. Hash-only anchors (e.g. /#services,
+  // /#how-it-works) aren't tracked here — they'd otherwise all light up
+  // together whenever the user is on the home page. A scroll-spy could be
+  // added later if Craig wants them to track scroll position.
+  if (href.includes("#")) return false;
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(href + "/");
 }
 
 export function Header() {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Radio } from "lucide-react";
+import Image from "next/image";
 
 const services = [
   { label: "On-Site RF Testing", href: "/#services" },
@@ -48,18 +48,20 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-400/20 flex items-center justify-center">
-                <Radio className="w-5 h-5 text-red-400" />
-              </div>
-              <span className="text-white font-heading font-semibold text-lg">
-                OSC Engineering
-              </span>
+            <div className="mb-4 inline-block bg-white rounded-lg p-3">
+              <Image
+                src="/images/osc-logo.png"
+                alt="OSC Engineering"
+                width={200}
+                height={100}
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Independent FCC RF compliance studies, on-site testing, and worker
-              safety training for cell sites — protecting property owners, school
-              districts, jurisdictions, and the workers who maintain these sites.
+              Independent FCC RF compliance for landlords, school districts, and
+              local planning departments — on-site testing, expert review of
+              carrier reports, and worker RF safety training. Also serves
+              wireless carriers.
             </p>
           </div>
 
