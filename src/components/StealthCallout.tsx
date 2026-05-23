@@ -65,7 +65,7 @@ export function StealthCallout() {
           >
             <Image
               src="/images/stealth-montage.jpg"
-              alt="Three stealth cellular installations: a saguaro cactus, a flagpole, and a faux rock outcrop"
+              alt="Four stealth cellular installations side by side: a saguaro cactus, a flagpole with a wider top housing, a faux rock outcrop, and a church bell tower with louvered openings"
               width={1536}
               height={1024}
               className="w-full h-auto object-cover"
@@ -73,7 +73,7 @@ export function StealthCallout() {
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-950/80 to-transparent">
               <p className="text-white text-xs font-heading font-semibold tracking-wider uppercase">
-                Cactus &middot; Flagpole &middot; Faux Rock
+                Cactus &middot; Flagpole &middot; Faux Rock &middot; Steeple
               </p>
             </div>
           </motion.div>
