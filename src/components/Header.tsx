@@ -29,18 +29,12 @@ export function Header() {
 
   return (
     <>
-      {/* Top utility bar */}
-      <div className="bg-slate-950 text-sm hidden md:block">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-6 text-slate-400">
-            <a href="tel:858-436-4120" className="hover:text-white transition-colors">
-              (858) 436-4120
-            </a>
-            <span className="w-px h-4 bg-slate-700" />
-            <a href="mailto:info@OSCengineering.com" className="hover:text-white transition-colors">
-              info@OSCengineering.com
-            </a>
-          </div>
+      {/* White contact strip — primary email visible above the fold on every page */}
+      <div className="bg-white border-b border-slate-100 hidden md:block">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-1.5 flex items-center justify-end text-xs text-slate-600">
+          <a href="mailto:info@OSCengineering.com" className="font-heading font-medium hover:text-red-600 transition-colors">
+            info@OSCengineering.com
+          </a>
         </div>
       </div>
 
