@@ -6,27 +6,6 @@ import { Activity, Radio, ClipboardCheck, GraduationCap, Wrench, FileText, FileS
 
 const services = [
   {
-    title: "On-Site RF Testing",
-    description:
-      "Direct measurement of RF energy at antenna sites using calibrated broadband probes — to verify compliance with the FCC Maximum Permissible Exposure (MPE) limits for both Occupational/Controlled and General Population/Uncontrolled environments.",
-    icon: Activity,
-    deliverable: "Field measurement report with MPE % at every accessible point",
-  },
-  {
-    title: "Theoretical RF Studies",
-    description:
-      "Computer-simulated modeling of antenna patterns, ERP, and exposure contours for proposed or existing sites — useful for planning, zoning submissions, and identifying restricted areas before construction.",
-    icon: Radio,
-    deliverable: "Predictive RF safety study with contour maps",
-  },
-  {
-    title: "Compliance Recommendations",
-    description:
-      "Specific, actionable mitigations to bring a non-compliant site into FCC compliance: signage, barriers, lockout procedures, antenna repositioning, power reductions, or worker training requirements.",
-    icon: ClipboardCheck,
-    deliverable: "Written remediation plan with prioritized actions",
-  },
-  {
     title: "Expert Review of RF Reports",
     description:
       "Independent second-opinion review of existing EME, EMF, and RF exposure assessments — the reports a carrier, third-party engineer, or prior consultant already produced. We verify methodology against FCC OET Bulletin 65 and 47 CFR § 1.1310, check MPE calculations, and flag whether the stated conclusions actually follow from the data. Built for jurisdictions, building owners, attorneys, and operators evaluating someone else's work.",
@@ -34,11 +13,18 @@ const services = [
     deliverable: "Technical review memo with methodology critique and MPE recalculations where needed",
   },
   {
-    title: "Worker Safety Training",
+    title: "Document & Lease Review",
     description:
-      "Site-specific RF safety awareness training for technicians, roofers, antenna riggers, building maintenance, and anyone working near transmitting equipment — so an Occupational/Controlled limit actually applies.",
-    icon: GraduationCap,
-    deliverable: "Training records & certificates for site files",
+      "Independent review of carrier-submitted RF compliance reports, lease language, and proposed modifications — so landlords, school boards, and jurisdictions know what they're actually signing.",
+    icon: FileText,
+    deliverable: "Plain-English memo flagging risks & ambiguities",
+  },
+  {
+    title: "On-Site RF Testing",
+    description:
+      "Direct measurement of RF energy at antenna sites using calibrated broadband probes — to verify compliance with the FCC Maximum Permissible Exposure (MPE) limits for both Occupational/Controlled and General Population/Uncontrolled environments.",
+    icon: Activity,
+    deliverable: "Field measurement report with MPE % at every accessible point",
   },
   {
     title: "Mitigation & Implementation Labor",
@@ -48,11 +34,25 @@ const services = [
     deliverable: "Photo-documented site close-out package",
   },
   {
-    title: "Document & Lease Review",
+    title: "Compliance Recommendations",
     description:
-      "Independent review of carrier-submitted RF compliance reports, lease language, and proposed modifications — so landlords, school boards, and jurisdictions know what they're actually signing.",
-    icon: FileText,
-    deliverable: "Plain-English memo flagging risks & ambiguities",
+      "Specific, actionable mitigations to bring a non-compliant site into FCC compliance: signage, barriers, lockout procedures, antenna repositioning, power reductions, or worker training requirements.",
+    icon: ClipboardCheck,
+    deliverable: "Written remediation plan with prioritized actions",
+  },
+  {
+    title: "Theoretical RF Studies",
+    description:
+      "Computer-simulated modeling of antenna patterns, ERP, and exposure contours for proposed or existing sites — useful for planning, zoning submissions, and identifying restricted areas before construction.",
+    icon: Radio,
+    deliverable: "Predictive RF safety study with contour maps",
+  },
+  {
+    title: "Worker Safety Training",
+    description:
+      "Site-specific RF safety awareness training for technicians, roofers, antenna riggers, building maintenance, and anyone working near transmitting equipment — so an Occupational/Controlled limit actually applies.",
+    icon: GraduationCap,
+    deliverable: "Training records & certificates for site files",
   },
 ];
 

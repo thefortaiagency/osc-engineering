@@ -50,10 +50,10 @@ export default function AboutPage() {
           <p>
             OSC Engineering — Occupational Safety &amp; Compliance Engineering — provides
             Radio Frequency (RF) Electromagnetic Emissions (EME) technical services to
-            landlords, school districts, and local planning departments who need to verify
-            and document compliance with FCC RF exposure limits. We also serve workers
-            who are exposed to RF on the job and (where it serves the primary client)
-            wireless carriers and their contractors.
+            landlords, school districts, local planning departments, and attorneys
+            who need to verify and document compliance with FCC RF exposure limits.
+            We also serve workers who are exposed to RF on the job and wireless
+            carriers and their contractors.
           </p>
 
           <p>
@@ -72,9 +72,9 @@ export default function AboutPage() {
 
           <h2>Who we work with</h2>
           <p>
-            Three primary client groups, each with a different need but the same
+            Four primary client groups, each with a different need but the same
             underlying question:
-            <em> &ldquo;Is this site safe, and can I prove it?&rdquo;</em>
+            <em> &ldquo;Should I be worried about these antennas?&rdquo;</em>
           </p>
 
           <ul>
@@ -96,6 +96,12 @@ export default function AboutPage() {
               <strong>Local planning departments &amp; municipalities</strong> — planners,
               zoning boards, and elected officials who need an independent technical opinion
               on proposed wireless installations during permitting review.
+            </li>
+            <li>
+              <strong>Attorneys</strong> representing landlords, school districts, or
+              jurisdictions in lease negotiations, permitting disputes, or community
+              concerns. We provide the engineering input that attorneys need to
+              negotiate or defend from a position of knowing what the report actually says.
             </li>
           </ul>
 

@@ -65,11 +65,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl"
           >
-            OSC Engineering works for <strong>landlords, school districts, and local
-            planning departments</strong> who need an independent read on the RF activity
-            at their site — plus the workers exposed to it, and (when needed) the
-            wireless carriers themselves. On-site testing, expert review, and worker
-            safety training grounded in 47 CFR §&nbsp;1.1310 and FCC OET Bulletin 65.
+            OSC Engineering works for <strong>landlords, school districts, local
+            planning departments, and attorneys</strong> who need an independent read
+            on the RF activity at their site — plus workers exposed to it and
+            wireless carriers. On-site testing, expert review, and worker safety
+            training grounded in 47 CFR §&nbsp;1.1310 and FCC OET Bulletin 65.
           </motion.p>
 
           <motion.div
@@ -87,12 +87,12 @@ export function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
-            <a
-              href="tel:858-436-4120"
+            <Link
+              href="/contact"
               className="px-8 py-4 bg-white/10 text-white font-heading font-medium rounded-lg hover:bg-white/20 transition-colors border border-white/20"
             >
-              (858) 436-4120
-            </a>
+              Contact us
+            </Link>
           </motion.div>
 
           {/* Trust line */}
