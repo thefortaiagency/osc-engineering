@@ -22,7 +22,7 @@ export function FloatingCTA() {
         href="tel:858-436-4120"
         className="flex-1 py-3 px-4 border border-slate-200 text-slate-900 font-heading font-semibold text-sm rounded-lg text-center hover:bg-slate-50 transition-colors"
       >
-        Call Craig
+        Call OSC
       </a>
       <Link
         href="/contact"
