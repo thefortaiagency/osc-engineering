@@ -23,7 +23,7 @@ export function CTASection() {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight">
             Get a defensible answer to{" "}
-            <span className="text-red-400">&ldquo;is this site safe?&rdquo;</span>
+            <span className="text-red-400">&ldquo;should I be worried about these antennas?&rdquo;</span>
           </h2>
 
           <p className="mt-6 text-slate-400 text-xl max-w-xl mx-auto leading-relaxed">
