@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Activity, Radio, ClipboardCheck, GraduationCap, Wrench, FileText, FileSearch } from "lucide-react";
+import { Activity, Radio, ClipboardCheck, GraduationCap, Wrench, FileText, FileSearch, Palette } from "lucide-react";
 
 const services = [
   {
@@ -46,6 +46,13 @@ const services = [
       "Computer-simulated modeling of antenna patterns, ERP, and exposure contours for proposed or existing sites — useful for planning, zoning submissions, and identifying restricted areas before construction.",
     icon: Radio,
     deliverable: "Predictive RF safety study with contour maps",
+  },
+  {
+    title: "Architectural Design",
+    description:
+      "Concealment and aesthetic design for new and existing cellular installations — so a site reads as part of the surrounding architecture, not a piece of telecom equipment bolted onto a roof. Stealth treatment selection (palm tree, faux rock, parapet integration, steeple housing), screening, color matching, and design packages for landlord, jurisdiction, or zoning review.",
+    icon: Palette,
+    deliverable: "Design package with concealment recommendations, renderings, and material specs",
   },
   {
     title: "Worker Safety Training",
