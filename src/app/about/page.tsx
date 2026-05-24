@@ -7,7 +7,7 @@ import { HeroWatermark } from "@/components/HeroWatermark";
 export const metadata: Metadata = {
   title: "About OSC Engineering — Independent RF Compliance",
   description:
-    "OSC Engineering provides independent FCC RF compliance for landlords, school districts, and local planning departments — plus workers near antennas and (where it serves the primary client) wireless carriers. Led by Craig VanDyke, President, with deep expertise in 47 CFR § 1.1310, FCC OET 65, and ANSI/IEEE C95.1.",
+    "OSC Engineering provides independent FCC RF compliance for landlords, school districts, local planning departments, and attorneys — plus workers near antennas and wireless carriers. Led by Craig VanDyke, President, with deep expertise in 47 CFR § 1.1310, FCC OET 65, and ANSI/IEEE C95.1.",
 };
 
 export default function AboutPage() {

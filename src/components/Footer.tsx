@@ -57,10 +57,10 @@ export function Footer() {
               />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Independent FCC RF compliance for landlords, school districts, and
-              local planning departments — on-site testing, expert review of
-              carrier reports, and worker RF safety training. Also serves
-              wireless carriers.
+              Independent FCC RF compliance for landlords, school districts, local
+              planning departments, and attorneys — on-site testing, expert
+              review of carrier reports, and worker RF safety training. Also
+              serves wireless carriers.
             </p>
           </div>
 

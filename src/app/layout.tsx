@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | OSC Engineering",
   },
   description:
-    "Independent FCC RF compliance for landlords (residential, churches, office buildings, water towers, billboards), school districts, and local planning departments / municipalities. On-site testing, expert review of carrier reports, worker RF safety training. Carrier-neutral, grounded in 47 CFR § 1.1310 and FCC OET 65. Also serves wireless carriers.",
+    "Independent FCC RF compliance for landlords (residential, churches, office buildings, water towers, billboards), school districts, local planning departments / municipalities, and attorneys. On-site testing, expert review of carrier reports, worker RF safety training. Carrier-neutral, grounded in 47 CFR § 1.1310 and FCC OET 65. Also serves wireless carriers.",
   keywords: [
     "FCC RF compliance",
     "FCC RF compliance for landlords",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "OSC Engineering",
     title: "OSC Engineering — FCC RF Compliance for Landlords, School Districts & Planning Departments",
     description:
-      "Independent FCC RF compliance for landlords, school districts, and local planning departments. On-site testing, expert review of carrier reports, worker RF safety training.",
+      "Independent FCC RF compliance for landlords, school districts, local planning departments, and attorneys. On-site testing, expert review of carrier reports, worker RF safety training.",
   },
 };
 
@@ -74,7 +74,7 @@ const jsonLd = {
   name: "OSC Engineering",
   alternateName: "Occupational Safety & Compliance Engineering",
   description:
-    "Independent FCC RF compliance for landlords (residential, churches, office buildings, water towers, billboards), school districts, and local planning departments. On-site testing, expert review of carrier reports, worker RF safety training.",
+    "Independent FCC RF compliance for landlords (residential, churches, office buildings, water towers, billboards), school districts, local planning departments, and attorneys. On-site testing, expert review of carrier reports, worker RF safety training.",
   url: "https://osc.fort-solutions.com",
   telephone: "+1-858-436-4120",
   email: "info@OSCengineering.com",
@@ -94,6 +94,10 @@ const jsonLd = {
     {
       "@type": "Audience",
       audienceType: "Local planning departments, zoning boards, and municipal officials reviewing wireless permits",
+    },
+    {
+      "@type": "Audience",
+      audienceType: "Attorneys representing landlords, school districts, or jurisdictions in lease negotiations, permitting disputes, or community concerns",
     },
     {
       "@type": "Audience",

@@ -77,7 +77,7 @@ export function Services() {
             Every engagement ends in a written, defensible deliverable.
             That&apos;s what regulators ask for. That&apos;s what landlords
             need to sleep at night. And that&apos;s what your file should
-            show the next time someone asks &ldquo;is this site safe?&rdquo;
+            show the next time someone asks &ldquo;should I be worried about these antennas?&rdquo;
           </p>
         </motion.div>
 
