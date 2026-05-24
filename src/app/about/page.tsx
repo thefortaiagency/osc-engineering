@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Radio, ShieldCheck, Building2, GraduationCap, Landmark, AlertTriangle } from "lucide-react";
+import { Radio, ShieldCheck, Building2, GraduationCap, Landmark, AlertTriangle, Scale } from "lucide-react";
 import { HeroWatermark } from "@/components/HeroWatermark";
 
 export const metadata: Metadata = {
@@ -176,11 +176,12 @@ export default function AboutPage() {
       {/* Client types row */}
       <section className="py-16 bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: Building2, label: "Property Owners" },
               { icon: GraduationCap, label: "School Districts" },
               { icon: Landmark, label: "Local Jurisdictions" },
+              { icon: Scale, label: "Attorneys" },
               { icon: Radio, label: "Wireless Operators" },
             ].map((c) => {
               const Icon = c.icon;

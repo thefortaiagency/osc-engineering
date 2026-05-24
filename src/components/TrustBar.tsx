@@ -1,14 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building2, GraduationCap, Landmark, HardHat, Radio } from "lucide-react";
+import { Building2, GraduationCap, Landmark, HardHat, Radio, Scale } from "lucide-react";
 
 const clients = [
   { label: "Property Owners", icon: Building2 },
   { label: "School Districts", icon: GraduationCap },
   { label: "Local Jurisdictions", icon: Landmark },
-  { label: "Wireless Operators", icon: Radio },
+  { label: "Attorneys", icon: Scale },
   { label: "Site Workers", icon: HardHat },
+  { label: "Wireless Operators", icon: Radio },
 ];
 
 export function TrustBar() {
@@ -22,7 +23,7 @@ export function TrustBar() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4"
         >
           {clients.map((c) => {
             const Icon = c.icon;
