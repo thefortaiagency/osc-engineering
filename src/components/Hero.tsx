@@ -21,7 +21,7 @@ export function Hero() {
           sizes="100vw"
         />
         {/* Left-side darkening gradient so hero copy stays readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/35 to-slate-950/0" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-transparent to-slate-950/70" />
         {/* Subtle grid overlay for engineering tone */}
         <div

@@ -97,7 +97,7 @@ export default function ResourcesPage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/35 to-slate-950/0" />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950/60" />
           <div
             className="absolute inset-0 opacity-[0.04]"
