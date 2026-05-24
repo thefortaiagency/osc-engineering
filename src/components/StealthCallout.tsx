@@ -6,13 +6,17 @@ import { EyeOff } from "lucide-react";
 
 const stealthExamples = [
   "Artificial palm trees",
-  "Saguaro cactus",
+  "Faux cactus",
+  "Artificial coniferous trees",
+  "Artificial deciduous trees",
   "Flagpoles",
   "Faux rocks",
   "Faux water tanks",
   "Church steeples and bell towers",
   "Building penthouses and parapets",
   "Billboard structures",
+  "Stadium railings",
+  "Behind interior and exterior walls",
 ];
 
 export function StealthCallout() {
@@ -41,7 +45,7 @@ export function StealthCallout() {
               antenna, it&apos;s easy to forget the FCC exposure rules still
               apply to anyone working near it.
             </p>
-            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-slate-700">
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-slate-700 lg:grid-cols-2">
               {stealthExamples.map((s) => (
                 <li key={s} className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-600 shrink-0" />
