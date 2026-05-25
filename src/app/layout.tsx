@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -181,6 +182,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
+        <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
